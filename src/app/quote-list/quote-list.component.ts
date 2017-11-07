@@ -20,6 +20,11 @@ export class QuoteListComponent implements OnInit {
     author: 'Leonardo da Vinci'
   }];
 
+  removeQuote (id) {
+      this.quotes = this.quotes.filter(
+        (quote) => quote.id !== id
+      );
+    }
   constructor() {}
 
   ngOnInit() {}
