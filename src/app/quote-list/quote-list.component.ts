@@ -27,5 +27,11 @@ export class QuoteListComponent implements OnInit {
     }
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    console.log('ngOnInit: quote-list component');
+  }
+
+  ngOnDestroy() {
+    console.log('ngOnDestroy: quote-list component');
+  }
 }
